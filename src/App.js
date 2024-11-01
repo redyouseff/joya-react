@@ -1,17 +1,29 @@
+import React from "react";
 import "./App.css";
 import Header from "./component/Header.tsx";
 import Footer from "./component/Footer.tsx";
 import Page from "./pages/page.tsx";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Services from "./pages/Services.jsx";
+import ContactPage from "./component/Contact/ContectPage.jsx";
+import AboutPage from "./component/About/AboutPage.tsx";
+
 
 function App() {
   return (
-    <div className="App">
-      <Header />
-
-      <Page></Page>
-       <Footer />
-  
-    </div>
+    <BrowserRouter>
+     
+        <Header />
+        <Routes>
+          <Route path="/" element={<Page />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/Contact" element={<ContactPage />} /> 
+          <Route path="/About" element={<AboutPage />} /> 
+          
+        </Routes>
+        <Footer />
+    
+    </BrowserRouter>
   );
 }
 
