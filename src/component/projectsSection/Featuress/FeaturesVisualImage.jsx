@@ -1,62 +1,103 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const FeaturesVisualImage = () => {
   return (
     <div className="relative w-full h-screen visual-image-wrap">
-      {/* Background image for desktop */}
-      <div
+      {/* Animated Background image for desktop */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5, delay: 0.2 }}
         className="hidden md:block absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url(/images/projects/02-features/01-apartmen.jpg)",
+          backgroundImage: "url('/features/WhatsApp Image 2024-11-04 at 21.54.12_4a2182ac.jpg')",
         }}
-      ></div>
-      {/* Background image for mobile */}
-      <div
+      ></motion.div>
+
+      {/* Animated Background image for mobile */}
+      <motion.div
+        initial={{ opacity: 0, scale: 1.1 }}
+        animate={{ opacity: 1, scale: 1 }}
+        transition={{ duration: 1.5, delay: 0.2 }}
         className="md:hidden absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url(/images/projects/02-features/01-apartmen.jpg)",
+          backgroundImage: "url('/features/WhatsApp Image 2024-11-04 at 21.54.12_4a2182ac.jpg')",
         }}
-      ></div>
+      ></motion.div>
 
       {/* Gradients on top and bottom */}
-      <div className="absolute inset-0 bg-gradient-to-t w-full h-1/2 from-transparent to-[#111612] z-10"></div>
-      <div className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-b from-transparent to-[#111612] z-10"></div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.5 }}
+        className="absolute inset-0 bg-gradient-to-t w-full h-1/2 from-transparent to-[#111612] z-10"
+      ></motion.div>
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.2, delay: 0.5 }}
+        className="absolute bottom-0 left-0 w-full h-1/2 bg-gradient-to-b from-transparent to-[#111612] z-10"
+      ></motion.div>
 
       {/* Scroll indicator */}
-      <div className="absolute bottom-[-9px] md:bottom-6 left-1/2 transform -translate-x-1/2 z-20">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        transition={{ duration: 1.5, delay: 1 }}
+        className="absolute bottom-[-9px] md:bottom-6 left-1/2 transform -translate-x-1/2 z-20"
+      >
         <div className="w-6 h-12 flex flex-col items-center">
           <div className="w-[1px] h-8 bg-[#faf8f7] animate-bounce"></div>
         </div>
-      </div>
+      </motion.div>
 
       {/* Info section */}
-      <div className="absolute bottom-0 left-0 w-full p-2.5 md:p-10 z-30 text-[#faf8f7]">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, delay: 1.2 }}
+        className="absolute bottom-0 left-0 w-full p-[10px] md:p-10 z-30 text-[#faf8f7]"
+      >
         <h2 className="text-4xl font-light uppercase fade-left transition-opacity duration-500">
           Villa Allegra
         </h2>
-        <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-2.5">
+        <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
           Palm Jumeirah <span className="mx-2">•</span> Request Price
         </h3>
-        <a
-          href="/Projects/Features/villa-allegra__67112f9c673d16920a7bbf41"
-          className="inline-block mt-4 px-6 py-2 bg-transparent border border-[#faf8f7] hover:bg-[#faf8f7] hover:text-[#111612] transition-colors duration-500"
-        >
-          See details
-        </a>
-      </div>
+       
+      </motion.div>
 
       {/* Search tabs */}
-      <div className="absolute bottom-0 right-0 p-2.5 md:p-10 z-30 text-[#faf8f7]">
+      <motion.div
+        initial={{ opacity: 0, y: 50 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 1.5, delay: 1.4 }}
+        className="absolute bottom-0 right-0 p-[10px] md:p-10 z-30 text-[#faf8f7]"
+      >
         <div className="flex space-x-4">
-          <a href="/Projects/Features" className="hover:underline">
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            whileHover={{ scale: 1.05, textDecoration: "underline" }}
+            transition={{ duration: 0.3 }}
+            href="/Projects/Features"
+            className="hover:underline"
+          >
             Feature
-          </a>
-
-          <a href="/Projects/Off-Plan" className="hover:underline">
-            Off Plans
-          </a>
+          </motion.a>
+          <motion.a
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            whileHover={{ scale: 1.05, textDecoration: "underline" }}
+            transition={{ duration: 0.3 }}
+            href="/Projects/Off-Plan"
+            className="hover:underline"
+          >
+            Off Plan
+          </motion.a>
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 };

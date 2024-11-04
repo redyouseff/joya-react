@@ -7,28 +7,28 @@ import FeatureTitle from "./FeaturesTitle";
 function Features() {
   const [featureProperties, setFeatureProperties] = useState([]);
 
-  useEffect(() => {
-    async function getFeatureProperties() {
-      try {
-        const data = await fetch(
-          "https://joya-backend-deploy-test.vercel.app/property/get-all-properties",
-          {
-            cache: "force-cache",
-          }
-        );
-        const res = await data.json();
-        setFeatureProperties(res.properties);
-      } catch (error) {
-        console.error("Failed to fetch properties:", error);
-      }
-    }
+  // useEffect(() => {
+  //   async function getFeatureProperties() {
+  //     try {
+  //       const data = await fetch(
+  //         "https://joya-backend-deploy-test.vercel.app/property/get-all-properties",
+  //         {
+  //           cache: "force-cache",
+  //         }
+  //       );
+  //       const res = await data.json();
+  //       setFeatureProperties(res.properties);
+  //     } catch (error) {
+  //       console.error("Failed to fetch properties:", error);
+  //     }
+  //   }
 
-    getFeatureProperties();
-  }, []);
+  //   getFeatureProperties();
+  // }, []);
 
   return (
     <div className="bg-[#111612] overflow-hidden">
-      <div>
+      <div >
         <FeaturesVisualImage />
       </div>
 
