@@ -12,14 +12,14 @@ import icon8 from "./icons/Snagging.svg";
 
 const ServiceCardsSection = () => {
   const cards = [
-    { title: "Real estate buying & selling", icon: icon1, isSvg: true },
-    { title: "Property rental", icon: icon2, isSvg: true },
-    { title: "Commercial", icon: icon3, isSvg: true },
-    { title: "Property management", icon: icon4, isSvg: true },
-    { title: "Holiday home – short term rental", icon: icon5, isSvg: true },
-    { title: "Snagging", icon: icon6, isSvg: true },
-    { title: "Conveyancing", icon: icon7, isSvg: true },
-    { title: "Golden visa", icon: icon8, isSvg: true },
+    { title: "commercial", icon: icon1, isSvg: true },
+    { title: "property management", icon: icon2, isSvg: true },
+    { title: "Golden Visa", icon: icon3, isSvg: true },
+    { title: "Holiday Home", icon: icon4, isSvg: true },
+    { title: "Conveyancing", icon: icon5, isSvg: true },
+    { title: "Property rental", icon: icon6, isSvg: true },
+    { title: "estate buying & selling", icon: icon7, isSvg: true },
+    { title: "Snagging ", icon: icon8, isSvg: true },
   ];
 
   const cardVariants = {
