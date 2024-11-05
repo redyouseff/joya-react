@@ -9,7 +9,7 @@ const navigationLinks = [
   { name: "Home", href: "/" },
   {
     name: "Projects",
-    href: "/",
+    href: "/projects",
     subLinks: [
       { name: "Off Plan", href: "/Projects/Off-Plan" },
       { name: "Features", href: "/Projects/Features" },
