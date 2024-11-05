@@ -50,7 +50,7 @@ const Header = () => {
                 src={icon}
                 alt="Joya properties"
                 className={`rounded-full transition-all duration-300 ${
-                  isScrolled ? "h-16 w-16" : "h-24 w-24"
+                  isScrolled ? "h-20 w-20" : "h-28 w-28"
                 }`}
               />
             </Link>
