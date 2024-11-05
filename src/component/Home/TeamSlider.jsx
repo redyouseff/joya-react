@@ -7,14 +7,14 @@ import image2 from "../../images/sliders/image 2.png";
 
 const teamMembers = [
   {
-    name: "Nabeel Hammudeh",
-    role: "Managing Director",
+    name: "Mohammad Rabie",
+    role: "CEO",
     img: image1,
     link: "https://www.joyaproperties.ae/en/member/domi-sofroniciova/",
   },
   {
-    name: "Mohammad Rabie",
-    role: "CEO",
+    name: "Nabeel Hammudeh",
+    role: "Managing Director",
     img: image2,
     link: "https://www.joyaproperties.ae/en/member/ruba/",
   },

@@ -29,7 +29,7 @@ function Features() {
   return (
     <div className="bg-[#111612] overflow-hidden">
       <div >
-        <FeaturesVisualImage />
+        {/* <FeaturesVisualImage /> */}
       </div>
 
       <div>
