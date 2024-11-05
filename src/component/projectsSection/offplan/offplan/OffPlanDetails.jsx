@@ -24,8 +24,8 @@ const OffPlanDetails = () => {
             className="space-y-4 flex flex-col justify-between"
           >
             <div className="grid grid-cols-2 gap-4">
-              <img src="/features/WhatsApp Image 2024-11-04 at 21.54.11_9a66b3a2.jpg" alt="Property Image 1" className="w-full h-[250px] object-cover rounded-lg" />
-              <img src="/features/WhatsApp Image 2024-11-04 at 21.54.12_401cf588.jpg" alt="Property Image 2" className="w-full h-[250px] object-cover rounded-lg" />
+              <img src="/features/WhatsApp Image 2024-11-05 at 13.53.30_fb6c3c26.jpg" alt="Property Image 1" className="w-full h-[250px] object-cover rounded-lg" />
+              <img src="/features/WhatsApp Image 2024-11-05 at 13.53.31_fdda7eeb.jpg" alt="Property Image 2" className="w-full h-[250px] object-cover rounded-lg" />
             </div>
             <img src="/features/WhatsApp Image 2024-11-04 at 21.54.12_4a2182ac.jpg" alt="Property Image 3" className="w-full h-[300px] object-cover rounded-lg" />
           </motion.div>
