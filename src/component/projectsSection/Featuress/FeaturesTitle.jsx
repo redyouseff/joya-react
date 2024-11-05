@@ -18,7 +18,7 @@ const FeatureTitleDuplicate = () => {
       <motion.div
         className="hidden md:block absolute inset-0 bg-cover bg-center"
         style={{
-          backgroundImage: "url('/off plane/1/WhatsApp Image 2024-11-05 at 02.53.59_9387b975.jpg')", // Absolute path
+          backgroundImage: "url('/off plane/1/WhatsApp Image 2024-11-05 at 02.54.00_551ce4f0.jpg')", // Absolute path
         }}
         initial={{ scale: 1.1 }}
         animate={{ scale: 1 }}
