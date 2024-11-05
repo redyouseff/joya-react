@@ -1,25 +1,25 @@
 import React from "react";
 import { motion } from "framer-motion";
-import image1 from "../../images/Services Images 330x220/2.png";
-import image2 from "../../images/Services Images 330x220/1.png";
-import image3 from "../../images/Services Images 330x220/3.png";
-import image4 from "../../images/Services Images 330x220/4.png";
-import image5 from "../../images/Services Images 330x220/5.png";
-import image6 from "../../images/Services Images 330x220/6.png";
-import image7 from "../../images/Services Images 330x220/7.png";
-import image8 from "../../images/Services Images 330x220/8.png";
-
+import { FaKey, FaBuilding, FaToolbox, FaHotel, FaWrench, FaFileContract, FaPassport } from "react-icons/fa";
+import icon1 from "./icons/Commercial.svg";
+import icon2 from "./icons/Conveyancing.svg";
+import icon3 from "./icons/Golden visa (1).svg";
+import icon4 from "./icons/Holiday home.svg";
+import icon5 from "./icons/Property management.svg";
+import icon6 from "./icons/Property rental.svg";
+import icon7 from "./icons/Real estate buying & selling.svg";
+import icon8 from "./icons/Snagging.svg";
 
 const ServiceCardsSection = () => {
   const cards = [
-    { title: "Real estate buying & selling", img: image3 },
-    { title: "Property rental", img: image1 },
-    { title: "Commercial", img: image6 },
-    { title: "Property management", img: image4 },
-    { title: "Holiday home – short term rental", img: image5 },
-    { title: "Snagging", img: image2 },
-    { title: "Conveyancing", img: image7 },
-    { title: "Golden visa", img: image8 },
+    { title: "Real estate buying & selling", icon: icon1, isSvg: true },
+    { title: "Property rental", icon: icon2, isSvg: true },
+    { title: "Commercial", icon: icon3, isSvg: true },
+    { title: "Property management", icon: icon4, isSvg: true },
+    { title: "Holiday home – short term rental", icon: icon5, isSvg: true },
+    { title: "Snagging", icon: icon6, isSvg: true },
+    { title: "Conveyancing", icon: icon7, isSvg: true },
+    { title: "Golden visa", icon: icon8, isSvg: true },
   ];
 
   const cardVariants = {
@@ -45,34 +45,20 @@ const ServiceCardsSection = () => {
             whileHover={{ scale: 1.05, transition: { duration: 0.3 } }}
             whileTap={{ scale: 0.95 }}
           >
-            <div>
-              <motion.div
-                className="image-section relative overflow-hidden"
-                whileHover="hover"
-              >
+            <div className="icon-section flex flex-col justify-center items-center bg-[#1b1f1d] h-[220px] rounded-lg transition-transform transform group-hover:scale-110 duration-500">
+              {card.isSvg ? (
                 <img
-                  src={card.img}
+                  src={card.icon}
                   alt={card.title}
-                  width={330}
-                  height={220}
-                  className="w-full lg:w-[330px] h-[220px] object-cover rounded-lg transition-transform transform group-hover:scale-110 duration-500"
+                  className="w-16 h-16 brightness-0 invert" // Set SVG icons to white using filters
                 />
-                <motion.div
-                  className="image-overlay absolute inset-0 bg-[#111612] bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-500"
-                  initial={{ opacity: 0 }}
-                  whileHover={{ opacity: 1 }}
-                >
-                  <span className="text-white text-2xl">↑</span>
-                </motion.div>
-              </motion.div>
+              ) : (
+                <card.icon size={50} className="text-[#faf8f7]" /> // Non-SVG icons set to white color
+              )}
+              <h3 className="text-lg mt-4 text-center text-[#faf8f7] font-semibold group-hover:text-[#3d6a64] transition-colors duration-300">
+                {card.title}
+              </h3>
             </div>
-            <motion.div className="card-item-content mt-4" whileHover={{ y: -5 }}>
-              <div>
-                <h3 className="text-lg text-[#faf8f7] font-semibold group-hover:text-[#3d6a64] transition-colors duration-300">
-                  {card.title}
-                </h3>
-              </div>
-            </motion.div>
           </motion.div>
         ))}
       </div>
