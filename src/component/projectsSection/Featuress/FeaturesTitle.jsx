@@ -151,12 +151,20 @@ const FeatureTitleDuplicate = () => {
               <img src="/features/image.png" alt="Agent" className="w-24 h-24 rounded-full border-4 border-[#404740]" />
               <h4 className="text-xl font-semibold text-center mt-2">Mohamed Nabil</h4>
               <div className="flex items-center space-x-4 mt-2">
-                <button className="flex items-center space-x-2 text-sm font-medium">
-                  <FaPhoneAlt /> <span>CALL NOW</span>
-                </button>
-                <button className="flex items-center space-x-2 text-sm font-medium">
-                  <FaWhatsapp /> <span>SEND US A MESSAGE</span>
-                </button>
+              <a
+                    href="tel:+97147654321"
+                    className="flex items-center space-x-2 text-sm font-medium"
+                  >
+                    <FaPhoneAlt /> <span>CALL NOW</span>
+                  </a>
+                  <a
+                    href="https://wa.me/97147654321"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-sm font-medium"
+                  >
+                    <FaWhatsapp /> <span>SEND US A MESSAGE</span>
+                  </a>
               </div>
             </motion.div>
 
@@ -325,12 +333,20 @@ const FeatureTitleDuplicate = () => {
               <img src="/features/image.png" alt="Agent" className="w-24 h-24 rounded-full border-4 border-[#404740]" />
               <h4 className="text-xl font-semibold text-center mt-2">Mohamed Nabil</h4>
               <div className="flex items-center space-x-4 mt-2">
-                <button className="flex items-center space-x-2 text-sm font-medium">
-                  <FaPhoneAlt /> <span>CALL NOW</span>
-                </button>
-                <button className="flex items-center space-x-2 text-sm font-medium">
-                  <FaWhatsapp /> <span>SEND US A MESSAGE</span>
-                </button>
+              <a
+                    href="tel:+97147654321"
+                    className="flex items-center space-x-2 text-sm font-medium"
+                  >
+                    <FaPhoneAlt /> <span>CALL NOW</span>
+                  </a>
+                  <a
+                    href="https://wa.me/97147654321"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-sm font-medium"
+                  >
+                    <FaWhatsapp /> <span>SEND US A MESSAGE</span>
+                  </a>
               </div>
             </motion.div>
 
