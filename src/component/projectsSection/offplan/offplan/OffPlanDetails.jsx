@@ -98,9 +98,12 @@ const OffPlanDetails = () => {
             >
               <h4 className="text-lg font-semibold">Description</h4>
               <p className="text-[#d3d3d3] leading-relaxed">
-                This stunning residence exemplifies modern elegance in an exclusive enclave. 
-                The home offers remarkable amenities, open-plan spaces, and high ceilings, making it a 
-                haven for luxury seekers. Perfect for those desiring refined living.
+             
+Bugatti Residences by Binghatti is the world’s first project by the renowned French luxury car brand Bugatti. Binghatti Properties, one of Dubai’s leading developers, is the creator of the complex. Located in the thriving neighbourhood of Business Bay, the upcoming striking landmark will comprise 2 towers, each 52 storeys high (4B+G+1P+45+R).
+
+The architectural concept of Bugatti Residences by Binghatti will skillfully combine expert craftsmanship with the impeccable heritage of Bugatti. That said, the contours of the project’s exteriors will be reminiscent of ripples of the beaches of the French Riviera and the dunes of Dubai.
+
+The superlative complex will house 182 branded units in 2–4 bedroom configurations of 1,750 sq. ft-14,881 sq. ft. There will be the Riviera Mansion Collection and the Sky Mansion Penthouse Collection with 171 and 11 penthouses, respectively. Each floor will house up to 7 units, whilst each sky mansion penthouse will span across the entire floor.
               </p>
             </motion.div>
           </motion.div>
@@ -173,11 +176,11 @@ const OffPlanDetails = () => {
       className="absolute bottom-0 left-0 w-full p-[10px] md:p-10 z-30 text-[#faf8f7]"
     >
       <h2 className="text-4xl font-light uppercase fade-left transition-opacity duration-500">
-        Villa Allegra
+      The Acres Estates
       </h2>
-      <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
+      {/* <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
         Palm Jumeirah <span className="mx-2">•</span> Request Price
-      </h3>
+      </h3> */}
      
     </motion.div>
 
@@ -308,9 +311,7 @@ const OffPlanDetails = () => {
             >
               <h4 className="text-lg font-semibold">Description</h4>
               <p className="text-[#d3d3d3] leading-relaxed">
-                This stunning residence exemplifies modern elegance in an exclusive enclave. 
-                The home offers remarkable amenities, open-plan spaces, and high ceilings, making it a 
-                haven for luxury seekers. Perfect for those desiring refined living.
+              Discover The Acres Estates by Meraas, an exclusive collection of 5-7 bedroom villas in The Acres, Dubailand. This nature-first sustainable community will offer luxurious living with living spaces from 6,913 to 11,090 sq. ft in Ivory or Amber Collections. Residents can enjoy private pools, gardens, and panoramic windows overlooking a green oasis.
               </p>
             </motion.div>
           </motion.div>
@@ -380,11 +381,11 @@ const OffPlanDetails = () => {
       className="absolute bottom-0 left-0 w-full p-[10px] md:p-10 z-30 text-[#faf8f7]"
     >
       <h2 className="text-4xl font-light uppercase fade-left transition-opacity duration-500">
-        Villa Allegra
+      GREENRIDGE
       </h2>
-      <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
+      {/* <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
         Palm Jumeirah <span className="mx-2">•</span> Request Price
-      </h3>
+      </h3> */}
      
     </motion.div>
 
@@ -513,9 +514,13 @@ const OffPlanDetails = () => {
             >
               <h4 className="text-lg font-semibold">Description</h4>
               <p className="text-[#d3d3d3] leading-relaxed">
-                This stunning residence exemplifies modern elegance in an exclusive enclave. 
-                The home offers remarkable amenities, open-plan spaces, and high ceilings, making it a 
-                haven for luxury seekers. Perfect for those desiring refined living.
+              Greenridge is a serene community designed for families seeking a peaceful yet active lifestyle. Featuring beautifully crafted 3- and 4-bedroom townhouses, it offers both privacy and a sense of togetherness. Experience the perfect balance of family living, fun, and adventure.
+
+Spacious 3- and 4-bedroom townhouses, blending privacy with community in beautifully landscaped surroundings.
+
+EMAAR SOUTH:
+
+Be part of Dubai’s future in a new community that supports your visions! Emaar South is perfectly positioned alongside Expo City Dubai, the future vision of the Expo 2020 Dubai site, offering easy access to Al Maktoum International Airport and a host of Dubai’s most popular attractions and business hubs.
               </p>
             </motion.div>
           </motion.div>

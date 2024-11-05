@@ -60,11 +60,11 @@ const VisualImage = () => {
       className="absolute bottom-0 left-0 w-full p-[10px] md:p-10 z-30 text-[#faf8f7]"
     >
       <h2 className="text-4xl font-light uppercase fade-left transition-opacity duration-500">
-        Villa Allegra
+      Bugatti Residences
       </h2>
-      <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
+      {/* <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
         Palm Jumeirah <span className="mx-2">•</span> Request Price
-      </h3>
+      </h3> */}
      
     </motion.div>
 

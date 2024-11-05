@@ -55,11 +55,11 @@ const FeatureTitleDuplicate = () => {
         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
       >
         <h2 className="text-4xl font-light uppercase">
-          Villa Allegra
+        District One VillaDistrict One Villa
         </h2>
-        <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
+        {/* <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
           Palm Jumeirah <span className="mx-2">•</span> Request Price
-        </h3>
+        </h3> */}
       </motion.div>
 
       {/* Search tabs */}
@@ -173,9 +173,7 @@ const FeatureTitleDuplicate = () => {
             >
               <h4 className="text-lg font-semibold">Description</h4>
               <p className="text-[#d3d3d3] leading-relaxed">
-                This stunning residence exemplifies modern elegance in an exclusive enclave. 
-                The home offers remarkable amenities, open-plan spaces, and high ceilings, making it a 
-                haven for luxury seekers. Perfect for those desiring refined living.
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
               </p>
             </motion.div>
           </motion.div>
@@ -232,11 +230,11 @@ const FeatureTitleDuplicate = () => {
         transition={{ duration: 1, delay: 0.5, ease: "easeOut" }}
       >
         <h2 className="text-4xl font-light uppercase">
-          Villa Allegra
+        Villa Allegra
         </h2>
-        <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
+        {/* <h3 className="text-lg font-thin mt-2 uppercase md:mb-0 mb-[10px]">
           Palm Jumeirah <span className="mx-2">•</span> Request Price
-        </h3>
+        </h3> */}
       </motion.div>
 
       {/* Search tabs */}
@@ -352,9 +350,7 @@ const FeatureTitleDuplicate = () => {
             >
               <h4 className="text-lg font-semibold">Description</h4>
               <p className="text-[#d3d3d3] leading-relaxed">
-                This stunning residence exemplifies modern elegance in an exclusive enclave. 
-                The home offers remarkable amenities, open-plan spaces, and high ceilings, making it a 
-                haven for luxury seekers. Perfect for those desiring refined living.
+              Experience Luxury Living in Villa Allegra. Situated on the covered Billionaire’s Row of Palm Jumeirah, this exquisite 5-bedroom villa presents an opportunity to live on the most desirable address in Dubai. Inspired by the contemporary style of Los Angeles, this custom built villa has been crafted with the finest materials, with a focus on modern & contemporary elegance. The exterior of Villa Allegra showcases an exquisite combination of grey marquina marble and imported grey tiles from Spain, creating a seamless color scheme throughout the property. Attention to detail was paramount, extending even to the driveway to maintain a consistent design language. Inside the villa, you'll find premium furniture from renowned brands such as Minotti, Giorgetti, and Paola Lenti, while the lighting fixtures are sourced from Henge, Viabizzuno & Qbo.
               </p>
             </motion.div>
           </motion.div>
