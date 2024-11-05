@@ -23,7 +23,7 @@ const CommercialDominance = () => {
 
       <div>
         <img
-          src="/images/about/Commercial.jpg"
+          src="/about us/WhatsApp Image 2024-11-05 at 04.32.13_b4e9a620.jpg"
           alt="Business Success"
           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
         />

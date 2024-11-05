@@ -31,7 +31,7 @@ const PeopleApproach = () => {
       {/* Image Section */}
       <div>
         <img
-          src="/images/about/people.jpg"
+          src="/about us/WhatsApp Image 2024-11-05 at 04.27.56_5fca8d1e.jpg"
           alt="People-Centric Approach"
           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
         />

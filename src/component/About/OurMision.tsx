@@ -27,7 +27,7 @@ const OurMission = () => {
       {/* Image Section */}
       <div>
         <img
-          src="/images/about/mission.jpg"
+          src="/about us/WhatsApp Image 2024-11-05 at 03.22.24_3ebccb90.jpg"
           alt="Aerial View of Dubai"
           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
         />

@@ -32,7 +32,7 @@ const EducationTechnology = () => {
       {/* Image Section */}
       <div>
         <img
-          src="/images/about/Education.jpg"
+          src="/about us/WhatsApp Image 2024-11-05 at 04.29.46_70cce935.jpg"
           alt="Education and Technology Prowess"
           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
         />

@@ -29,7 +29,7 @@ const OurVision = () => {
       {/* Image Section */}
       <div>
         <img
-          src="/images/about/vision.jpg"
+          src="/about us/WhatsApp Image 2024-11-05 at 03.21.07_ea713e2f.jpg"
           alt="Joya Vision"
           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
         />

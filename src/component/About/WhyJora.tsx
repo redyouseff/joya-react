@@ -35,7 +35,7 @@ const WhyJoya = () => {
       {/* Image Section */}
       <div>
         <img
-          src="../../images/about/why.jpg"
+          src="/about us/WhatsApp Image 2024-11-05 at 03.20.08_7acd7fc2.jpg"
           alt="Why Joya"
           className="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-500"
         />
