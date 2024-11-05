@@ -58,10 +58,7 @@ const OffPlanDetails = () => {
                 <FaRulerCombined className="text-2xl" />
                 <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
               </div>
-              <div className="flex flex-col items-center">
-                <FaRulerCombined className="text-2xl" />
-                <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
-              </div>
+              
               <div className="flex flex-col items-center">
                 <FaCar className="text-2xl" />
                 <h4 className="text-lg font-semibold">5 Cars</h4>
@@ -271,10 +268,7 @@ The superlative complex will house 182 branded units in 2–4 bedroom configurat
                 <FaRulerCombined className="text-2xl" />
                 <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
               </div>
-              <div className="flex flex-col items-center">
-                <FaRulerCombined className="text-2xl" />
-                <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
-              </div>
+            
               <div className="flex flex-col items-center">
                 <FaCar className="text-2xl" />
                 <h4 className="text-lg font-semibold">5 Cars</h4>
@@ -469,10 +463,6 @@ The superlative complex will house 182 branded units in 2–4 bedroom configurat
               <div className="flex flex-col items-center">
                 <FaBath className="text-2xl" />
                 <h4 className="text-lg font-semibold">9 Baths</h4>
-              </div>
-              <div className="flex flex-col items-center">
-                <FaRulerCombined className="text-2xl" />
-                <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
               </div>
               <div className="flex flex-col items-center">
                 <FaRulerCombined className="text-2xl" />

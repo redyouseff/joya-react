@@ -133,10 +133,7 @@ const FeatureTitleDuplicate = () => {
                 <FaRulerCombined className="text-2xl" />
                 <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
               </div>
-              <div className="flex flex-col items-center">
-                <FaRulerCombined className="text-2xl" />
-                <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
-              </div>
+           
               <div className="flex flex-col items-center">
                 <FaCar className="text-2xl" />
                 <h4 className="text-lg font-semibold">5 Cars</h4>
@@ -310,10 +307,7 @@ const FeatureTitleDuplicate = () => {
                 <FaRulerCombined className="text-2xl" />
                 <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
               </div>
-              <div className="flex flex-col items-center">
-                <FaRulerCombined className="text-2xl" />
-                <h4 className="text-lg font-semibold">26,000 Sq. ft.</h4>
-              </div>
+              
               <div className="flex flex-col items-center">
                 <FaCar className="text-2xl" />
                 <h4 className="text-lg font-semibold">5 Cars</h4>
