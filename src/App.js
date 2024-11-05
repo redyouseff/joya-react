@@ -9,7 +9,7 @@ import ContactPage from "./component/Contact/ContectPage.jsx";
 import AboutPage from "./component/About/AboutPage.tsx";
 import Projects from "./component/projectsSection/Projects.jsx";
 import Features from "./component/projectsSection/Featuress/Features.jsx";
-
+import OffPlan from "./component/projectsSection/offplan/offplan/OffPlan.jsx"
 
 function App() {
   return (
@@ -21,8 +21,9 @@ function App() {
           <Route path="/services" element={<Services />} />
           <Route path="/Contact" element={<ContactPage />} /> 
           <Route path="/About" element={<AboutPage />} /> 
-          <Route path="/Projects" element={<Projects />} /> 
+          {/* <Route path="/Projects" element={<Projects />} />  */}
           <Route path="/Projects/Features" element={<Features />} /> 
+          <Route path="/Projects/Off-Plan" element={< OffPlan/>} />
 
         </Routes>
         <Footer />

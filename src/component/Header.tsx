@@ -4,11 +4,12 @@ import { Menu, X } from "lucide-react";
 import useScrollPosition from "../hooks/useScrollPosition.ts";
 import image from "../images/sliders/Joya Logo Full Rounded.png";
 import "./../css/header.css";
+
 const navigationLinks = [
   { name: "Home", href: "/" },
   {
     name: "Projects",
-    href: "/Projects",
+    href: "/",
     subLinks: [
       { name: "Off Plan", href: "/Projects/Off-Plan" },
       { name: "Features", href: "/Projects/Features" },
@@ -22,7 +23,7 @@ const navigationLinks = [
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
-  const [isDropdownOpen, setIsDropdownOpen] = React.useState(false);
+  const [activeDropdown, setActiveDropdown] = React.useState(null);
   const scrollPosition = useScrollPosition();
   const pathName = window.location.pathname;
   const isScrolled = React.useMemo(() => scrollPosition > 0, [scrollPosition]);
@@ -65,8 +66,8 @@ const Header = () => {
               <div
                 key={link.name}
                 className="relative group"
-                onMouseEnter={() => link.subLinks && setIsDropdownOpen(true)}
-                onMouseLeave={() => link.subLinks && setIsDropdownOpen(false)}
+                onMouseEnter={() => link.subLinks && setActiveDropdown(link.name)}
+                onMouseLeave={() => link.subLinks && setActiveDropdown(null)}
               >
                 <Link
                   to={link.href}
@@ -81,7 +82,7 @@ const Header = () => {
                   </span>
                 </Link>
                 {/* Dropdown Menu */}
-                {link.subLinks && isDropdownOpen && (
+                {link.subLinks && activeDropdown === link.name && (
                   <div className="absolute w-[100px] left-0 pt-5 bg-transparent text-[#f1f0ec] rounded-lg shadow-lg transition-opacity duration-300 ease-in-out opacity-100">
                     {link.subLinks.map((subLink) => (
                       <Link
@@ -133,8 +134,7 @@ const Header = () => {
               <div
                 key={link.name}
                 className="relative group"
-                onMouseEnter={() => link.subLinks && setIsDropdownOpen(true)}
-                onMouseLeave={() => link.subLinks && setIsDropdownOpen(false)}
+                onClick={() => setActiveDropdown(link.name)}
               >
                 <Link
                   to={link.href}
@@ -147,8 +147,8 @@ const Header = () => {
                   </span>
                 </Link>
                 {/* Mobile Dropdown Menu */}
-                {link.subLinks && isDropdownOpen && (
-                  <div className="absolute left-0 w-[100px] mt-2 bg-[#041d1a] text-[#f1f0ec] rounded-lg shadow-lg transition-opacity duration-300 ease-in-out opacity-100 z-[2]">
+                {link.subLinks && activeDropdown === link.name && (
+                  <div className="pl-6 pt-2 space-y-2">
                     {link.subLinks.map((subLink) => (
                       <Link
                         key={subLink.name}

@@ -16,9 +16,9 @@
     return (
       <section className="w-full min-h-screen bg-[#111612] text-[#EFECE6]">
         <div className="container mx-auto px-6 lg:px-12">
-          <div className="overflow-x-hidden" data-aos="fade-up">
+          {/* <div className="overflow-x-hidden" data-aos="fade-up">
             <ContactVisualImage />
-          </div>
+          </div> */}
           <div className="contacts py-12 text-white pt-32 bb-16 overflow-x-hidden">
             <div className="container mx-auto">
               <div className="text-center">
