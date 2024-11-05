@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import useScrollPosition from "../hooks/useScrollPosition.ts";
-import image from "../images/sliders/Joya Logo Full Rounded.png";
+import icon from "./logo_joya SVG.svg";
 import "./../css/header.css";
 
 const navigationLinks = [
@@ -26,7 +26,7 @@ const Header = () => {
   const [activeDropdown, setActiveDropdown] = React.useState(null);
   const scrollPosition = useScrollPosition();
   const pathName = window.location.pathname;
-  const isScrolled = React.useMemo(() => scrollPosition > 0, [scrollPosition]);
+  const isScrolled = scrollPosition > 0;
 
   return (
     <header
@@ -44,17 +44,13 @@ const Header = () => {
         ></div>
         <div className="container mx-auto px-2 py-5 flex justify-between items-center relative z-10">
           {/* Logo */}
-          <div className="flex items-center justify-center">
+          <div className="flex items-center justify-center ml-4">
             <Link to="/">
               <img
-                src={image}
+                src={icon}
                 alt="Joya properties"
-                width={300}
-                height={60}
-                className={`transition-all duration-300 ${
-                  isScrolled
-                    ? "ml-[-45px] w-[200px] h-auto md:m-0 md:h-10 md:w-auto"
-                    : "md:h-[60px] md:w-auto w-[250px] h-auto ml-[-45px]"
+                className={`rounded-full transition-all duration-300 ${
+                  isScrolled ? "h-12 w-12" : "h-16 w-16"
                 }`}
               />
             </Link>
