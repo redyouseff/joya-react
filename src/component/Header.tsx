@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import useScrollPosition from "../hooks/useScrollPosition.ts";
-import icon from "./logo_joya SVG.svg";
+import icon from "./Mask group.svg";
 import "./../css/header.css";
 
 const navigationLinks = [
@@ -33,7 +33,7 @@ const Header = () => {
       className={`fixed w-full z-50 transition-all duration-300 ${
         isScrolled
           ? "bg-gradient-to-t from-transparent to-[#111612] bg-opacity-90 h-[80px]"
-          : "bg-gradient-to-t from-transparent to-[#111612] h-[120px]"
+          : "bg-gradient-to-t from-transparent to-[#111612] h-[140px]"
       } shadow-lg`}
     >
       <div className="relative h-full">
@@ -50,7 +50,7 @@ const Header = () => {
                 src={icon}
                 alt="Joya properties"
                 className={`rounded-full transition-all duration-300 ${
-                  isScrolled ? "h-12 w-12" : "h-16 w-16"
+                  isScrolled ? "h-16 w-16" : "h-24 w-24"
                 }`}
               />
             </Link>
