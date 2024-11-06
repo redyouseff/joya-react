@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { FaBed, FaBath, FaRulerCombined, FaCar } from "react-icons/fa";
 
 function Features() {
   useEffect(() => {
@@ -25,12 +26,14 @@ function Features() {
       imgSrc: "/off plane/1/WhatsApp Image 2024-11-05 at 02.53.59_940121d8.jpg",
       description:
         "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+      details: { beds: 5, baths: 5, area: "26,000 Sq. ft.", cars: 5 },
     },
     {
       title: "Villa Allegra",
       imgSrc: "/off plane/2/WhatsApp Image 2024-11-05 at 02.56.29_36f40446.jpg",
       description:
         "Experience Luxury Living in Villa Allegra. Situated on the covered Billionaire’s Row of Palm Jumeirah, this exquisite 5-bedroom villa presents an opportunity to live on the most desirable address in Dubai.",
+      details: { beds: 3, baths: 9, area: "26,000 Sq. ft.", cars: 5 },
     },
   ];
 
@@ -58,9 +61,30 @@ function Features() {
               />
             </div>
             <h3 className="text-3xl font-semibold text-white mb-4">{card.title}</h3>
-            <p className="text-[#a0b3b1] text-base leading-relaxed">
+            <p className="text-[#a0b3b1] text-base leading-relaxed mb-8">
               {truncateText(card.description, maxDescriptionLength)}
             </p>
+            <div className="flex justify-around mt-4" data-aos="zoom-in" data-aos-delay="200">
+              <div className="flex flex-col items-center space-y-1 text-[#a0b3b1]">
+                <FaBed className="text-2xl" />
+                <span className="text-md font-semibold">{card.details.beds}</span>
+                <span className="text-xs">Beds</span>
+              </div>
+              <div className="flex flex-col items-center space-y-1 text-[#a0b3b1]">
+                <FaBath className="text-2xl" />
+                <span className="text-md font-semibold">{card.details.baths}</span>
+                <span className="text-xs">Baths</span>
+              </div>
+              <div className="flex flex-col items-center space-y-1 text-[#a0b3b1]">
+                <FaRulerCombined className="text-2xl" />
+                <span className="text-md font-semibold">{card.details.area}</span>
+              </div>
+              <div className="flex flex-col items-center space-y-1 text-[#a0b3b1]">
+                <FaCar className="text-2xl" />
+                <span className="text-md font-semibold">{card.details.cars}</span>
+                <span className="text-xs">Cars</span>
+              </div>
+            </div>
           </a>
         ))}
       </div>
