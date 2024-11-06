@@ -10,6 +10,8 @@ import "aos/dist/aos.css";
 import ServicesVisualImage from "../component/services/ServicesVisualImage";
 import ServiceTitle from "../component/services/ServiceTitle";
 import ServiceCardsSection from "../component/services/ServiceCardsSection";
+import MortageCalculator from "../component/services/MortageCalculator";
+
 
 
 
@@ -38,9 +40,9 @@ function Services() {
         <ServiceCardsSection />
       </div>
 
-      {/* <div data-aos="fade-right">
-        <MortgageCalculator />
-      </div> */}
+       <div data-aos="fade-right">
+        <MortageCalculator />
+      </div> 
     </div>
   );
 }
